@@ -1,0 +1,20 @@
+PODS:
+  - Alamofire (4.9.1)
+  - AlamofireMapper (1.0.0):
+    - Alamofire (~> 4.1)
+
+DEPENDENCIES:
+  - AlamofireMapper
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AlamofireMapper
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  AlamofireMapper: bdcd94eb53ab63ec9a12e4685bba73e3d0072f36
+
+PODFILE CHECKSUM: 8f288438d9238ad4ad447d4fb1c955e0e0e23980
+
+COCOAPODS: 1.11.2

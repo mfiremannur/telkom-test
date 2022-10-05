@@ -1,0 +1,6 @@
+framework module Pods_telkomtest {
+  umbrella header "Pods-telkomtest-umbrella.h"
+
+  export *
+  module * { export * }
+}

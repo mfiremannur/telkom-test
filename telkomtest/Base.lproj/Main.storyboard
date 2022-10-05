@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="telkomtest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="qnm-0b-zEv">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="wpn-bM-RqY">
+                                    <size key="itemSize" width="100" height="194"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DataCollectionViewCell" id="txQ-tC-hnm" customClass="DataCollectionViewCell" customModule="telkomtest" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="194"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="bgE-Tg-LtZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="194"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cH4-Qh-pOE">
+                                                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="RUN-Vd-WFO"/>
+                                                        <constraint firstAttribute="height" constant="100" id="Y8d-XF-Vo0"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ex7-aa-tcG">
+                                                    <rect key="frame" x="29.5" y="108" width="41.5" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="cH4-Qh-pOE" firstAttribute="centerX" secondItem="bgE-Tg-LtZ" secondAttribute="centerX" id="Ge0-LS-iUW"/>
+                                                <constraint firstItem="Ex7-aa-tcG" firstAttribute="centerX" secondItem="cH4-Qh-pOE" secondAttribute="centerX" id="Mna-pR-aZD"/>
+                                                <constraint firstItem="cH4-Qh-pOE" firstAttribute="leading" secondItem="bgE-Tg-LtZ" secondAttribute="leading" id="fFW-1v-3pd"/>
+                                                <constraint firstItem="cH4-Qh-pOE" firstAttribute="top" secondItem="bgE-Tg-LtZ" secondAttribute="top" id="lhh-iX-moS"/>
+                                                <constraint firstItem="Ex7-aa-tcG" firstAttribute="top" secondItem="cH4-Qh-pOE" secondAttribute="bottom" constant="8" id="pFh-o7-BVE"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="100" height="194"/>
+                                        <connections>
+                                            <outlet property="productImage" destination="cH4-Qh-pOE" id="Z3Q-n5-8Ay"/>
+                                            <outlet property="productLabel" destination="Ex7-aa-tcG" id="pVJ-6r-qUR"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qnm-0b-zEv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6ca-cc-flP"/>
+                            <constraint firstItem="qnm-0b-zEv" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Cid-PF-knc"/>
+                            <constraint firstAttribute="bottom" secondItem="qnm-0b-zEv" secondAttribute="bottom" id="hhN-Qs-Skz"/>
+                            <constraint firstItem="qnm-0b-zEv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="iGW-SE-pNA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="qnm-0b-zEv" id="OJU-0m-fUh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="98.550724637681171" y="83.705357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
